@@ -5,45 +5,58 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Login</title>
+		<!-- Chamada CSS do Bootstrap -->
 		<link rel="stylesheet" href="../css/bootstrap.min.css"/>
 		<style>
 			form#formulario{
 				margin-top: 200px;
 			}
-			/*h1{
+			/*
+			Retire o comentario para voce ver as divs em ação
+
+			h1{
 				border-color: red;
 				border-style: solid;
-			}*/
+			}
+
+			*/
 			
 		</style>
+		<!-- Chamada JS do BootStrap -->
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		<!-- div de container classe container vai deixar uma distancia lateral no browser -->
 		<div class="container">
+			<!-- Inicio do formulario utilizado uma classe de formulario horizontal -->
 			<form id="formulario" action="#" method="post" class="form-horizontal">
+				<!-- Esta classe Jumbotron vai deixar os H1 maiores e outros elementos diferentes e a classe row é equivalente ao clear both do CSS para floats -->
 				<div class="jumbotron row">
+					<!-- col-md-Numero ou col-md-offset-Numero define a posição do objeto no site -->
 					<h1 class="col-md-8 col-md-offset-4">Bem vindo</h1>
+					<!-- form grop alem de agrupar os inputs com seus labels ele tambem da um afastamento para cada um -->
 					<div class="form-group">
-						<label for="cNome" class="control-label
-						 col-md-4 sr-only">Nome</label>
+						<!-- sr-only deixa o label hide "Escondido". Como o label é uma tag semantica é importatante ter ela no site mesmo se for invisivel para o usuario -->
+						<label for="cNome" class="control-label col-md-4 sr-only">Nome</label>
 						<div class="col-md-4 col-md-offset-0">
+							<!-- input-lg deixa o input maior -->
 							<input class="form-control input-lg" id="cNome" type="text" size="20" maxlength="20" placeholder="Nome">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="cSenha" class="control-label
-						 col-md-4 oly-one sr-only">Senha</label>
+						<label for="cSenha" class="control-label col-md-4 oly-one sr-only">Senha</label>
 						<div class="col-md-4 col-md-offset-0">
 							<input class="form-control input-lg" id="cSenha" type="password" size="20" maxlength="20" placeholder="Senha">
 						</div>
 					</div>
 					<div class="col-md-4 col-md-offset-4">
+						<!-- btn é a class default para todos os botões; btn-primary deixa o botão com um tom azul; btn-lg deixa o botão maior; btn-block deixa o botão parecendo um bloco quase do tamanhode um input -->
 						<button id="btnTeste" class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
 					</div>
-					<div class="row"></div>
+					<!-- Para mais informações acesse o site do bootstrap http://getbootstrap.com -->
 				</div>
 			</form>
 		</div>
-	<script src="../js/jquery-2.1.4.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>
