@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Database: `cadastrousuarios`
 --
 
-CREATE DATABASE IF NOT EXISTS `cadastrousuarios` DEFAULT CHARACTER SET utf8 COLLATE utf8_romanian_ci;
+CREATE DATABASE IF NOT EXISTS `cadastrousuario` DEFAULT CHARACTER SET utf8 COLLATE utf8_romanian_ci;
 USE `cadastrousuarios`;
 
 -- --------------------------------------------------------
