@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 20-Out-2015 às 02:53
+-- Generation Time: 27-Out-2015 às 21:49
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -17,8 +17,11 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `cadastrousuario`
+-- Database: `cadastrousuarios`
 --
+
+CREATE DATABASE IF NOT EXISTS `cadastrousuarios` DEFAULT CHARACTER SET utf8 COLLATE utf8_romanian_ci;
+USE `cadastrousuarios`;
 
 -- --------------------------------------------------------
 
@@ -28,16 +31,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `usuario` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Usuario` varchar(50) COLLATE utf8_romanian_ci NOT NULL,
-  `Senha` varchar(50) COLLATE utf8_romanian_ci NOT NULL,
+  `Usuario` varchar(20) COLLATE utf8_romanian_ci NOT NULL,
+  `Senha` varchar(20) COLLATE utf8_romanian_ci NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `Usuario` (`Usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_romanian_ci AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `usuario`
---
-
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_romanian_ci AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
